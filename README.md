@@ -9,8 +9,6 @@ In this project, I will discuss different classification models and compare them
 
 It will show that KNN achieves worse classification accuracy than CNN. The implemented approaches are evaluated by the accuracy of the predictions on test photos.
 
----
-
 ## Methods
 
 ### K Nearest Neighbours (KNN)
@@ -152,16 +150,12 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 [https://github.com/yu4u/cutout-random-erasing](https://github.com/yu4u/cutout-random-erasing)
 
----
-
 ## Results
 
 | Classifier | My implementation | Benchmark |
 | --- | --- | --- |
 | KNeighborsClassifier | 0.858 | 0.860 |
 | 2 Conv+pooling | 0.923 | 0.916 |
-
----
 
 ## Usage
 
