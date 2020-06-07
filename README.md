@@ -165,19 +165,19 @@ Fashion-MNIST dataset is downloaded from Keras dataset.
 
 ![](screenshots/16.png)
 
-I installed the library: Tensorflow. I used these libraries:
+I installed the library: **Tensorflow.** I used these libraries:
 
 ![](screenshots/17.png)
 
-I also installed pyyaml h5py to save/load model.
+I also installed **pyyaml h5py** to save/load model.
 
-I saved my model in HDF5 standard:
+I saved my model in **HDF5 standard**:
 
 ![](screenshots/18.png)
 
 You can reload saved model:
 
-```**new\_model = tf.keras.models.load\_model(&#39;my\_model.5&#39;)**```
+```new\_model = tf.keras.models.load\_model(&#39;my\_model.5&#39;)```
 
 Or just run the program. Each method is in a separate, single file.
 
