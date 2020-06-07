@@ -1,5 +1,5 @@
 # Fashion MNIST Clothing Classification
-## Introduction
+## `Introduction`
 
 The goal of this exercise was to implement a model that would allow classification of clothes photographs. Image classification is one of the most fundamental problems in ML. Given a set of images that are all labeled with a single category (digits 0...9), model should predict these categories for a novel set of test images and measure the accuracy of the predictions. There are a variety of challenges associated with this task, e.g. different points of view, image deformation, etc.
 
