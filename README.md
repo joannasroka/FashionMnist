@@ -13,7 +13,7 @@ It will show that KNN achieves worse classification accuracy than CNN. The imple
 
 ## Methods
 
-**K Nearest Neighbours (KNN)**
+### K Nearest Neighbours (KNN)
 
 KNN classifier can work directly on images without feature extraction. Therefore, I didn&#39;t use extract features in any way. This technique can be described as discriminative modeling. It&#39;s purpose is to model conditional probability distribution. K-Nearest Neighbors is a non-parametric classification algorithm. The basic idea behind it is simple. Given a image to classify, find k images in the train set that are &quot;closest&quot;, that is the most similar to the test image. Assign the most frequent among k labels corresponding to neighbours to the test vector or image. I chose the same parameter k (k = 5) that was used in the Benchmark. Above this number I didn&#39;t get a better result.
 
@@ -29,7 +29,7 @@ In order to compute the distance matrix efficiently I needed to vectorize the op
 
 The final average accuracy of the model is **85.77%.** According to the Benchmarks result, the same classifier can achieve the result of **86.0%** accuracy. This small difference may have been caused by differences in implementation, e.g. implementation of different closeness metric or which class the algorithm has chosen if both had had the same probability.
 
-**Fashion Mnist**
+### Fashion Mnist
 
 This is a dataset of Zalando&#39;s article images.
 
@@ -54,13 +54,13 @@ It consists of a training set (60,000 examples) and a test set (10,000 examples)
 
 Each example of training and test is assigned to one of the above labels.
 
-**Import Fashion Mnist dataset with Tensorflow/Keras:**
+### Import Fashion Mnist dataset with Tensorflow/Keras:
 
 Fashion-MNIST dataset is downloaded from Keras dataset.
 
 ![](screenshots/4.png)
 
-**Convolutional Neural Networks (CNN):**
+### Convolutional Neural Networks (CNN):
 
 I&#39;ve created a simple CNN. I chose this classificator because it&#39;s the most popular neural network model used for image classification task. I built my model using the Keras framework.
 
@@ -72,7 +72,7 @@ I trained the model in 50 epochs, compiled it with categorical\_crossentropy los
 
 ![](screenshots/6.png)
 
-**Cutout/Random erasing**
+### Cutout/Random erasing
 
 I also used Cutout/Random erasing implementation written by **yu4u** ([https://github.com/yu4u/cutout-random-erasing](https://github.com/yu4u/cutout-random-erasing)). This is a kind of image preprocessing methods for convolutional neural networks. It tries to regularize model by using training images with randomly changed or removed parts. I&#39;ve decided that 15% of training photos will be modified using this method. Function eraser() changes single input image.
 
@@ -118,7 +118,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 ![](screenshots/15.png)
 
-**Sources:**
+### Sources:
 
 [https://www.youtube.com/watch?v=RJudqel8DVA&amp;feature=youtu.be](https://www.youtube.com/watch?v=RJudqel8DVA&amp;feature=youtu.be)
 
@@ -134,7 +134,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 [https://www.tensorflow.org/tutorials/keras/save\_and\_load](https://www.tensorflow.org/tutorials/keras/save_and_load)
 
-**Tensorflow Tutorials which I used to write the model:**
+### Tensorflow Tutorials which I used to write the model:
 
 [https://www.pyimagesearch.com/2019/02/11/fashion-mnist-with-keras-and-deep-learning/](https://www.pyimagesearch.com/2019/02/11/fashion-mnist-with-keras-and-deep-learning/)
 
@@ -148,7 +148,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 [https://github.com/cmasch/zalando-fashion-mnist/blob/master/Simple\_Convolutional\_Neural\_Network\_Fashion-MNIST.ipynb](https://github.com/cmasch/zalando-fashion-mnist/blob/master/Simple_Convolutional_Neural_Network_Fashion-MNIST.ipynb)
 
-**Cutout/Random erasing:**
+### Cutout/Random erasing:
 
 [https://github.com/yu4u/cutout-random-erasing](https://github.com/yu4u/cutout-random-erasing)
 
@@ -165,7 +165,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 ## Usage
 
-**Import Fashion Mnist dataset with Tensorflow/Keras:**
+### Import Fashion Mnist dataset with Tensorflow/Keras:**
 
 Fashion-MNIST dataset is downloaded from Keras dataset.
 
