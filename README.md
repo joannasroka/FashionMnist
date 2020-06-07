@@ -22,7 +22,7 @@ I used the optimized Euclidean distance method, also called L2 norm, without any
 
 In order to compute the distance matrix efficiently I needed to vectorize the operation. By vectorizing I mean expressing the operations done on each pair of elements of matrices as an operation done on whole matrices.
 
-![](RackMultipart20200607-4-13xvoq8_html_fadf591586efc0d9.png)
+![](screenshots/2.png)
 
 The final average accuracy of the model is **85.77%.** According to the Benchmarks result, the same classifier can achieve the result of **86.0%** accuracy. This small difference may have been caused by differences in implementation, e.g. implementation of different closeness metric or which class the algorithm has chosen if both had had the same probability.
 
@@ -32,7 +32,7 @@ This is a dataset of Zalando&#39;s article images.
 
 Sample pictures (before adding distortion):
 
-![](RackMultipart20200607-4-13xvoq8_html_ae31b38a232ccaa1.png)
+![](screenshots/3.png)
 
 It consists of a training set (60,000 examples) and a test set (10,000 examples). Each image is a 28 x 28 array with values ranging from 0 to 255. Each example is associated with a label indicating one of 10 classes:
 
@@ -55,7 +55,7 @@ Each example of training and test is assigned to one of the above labels.
 
 Fashion-MNIST dataset is downloaded from Keras dataset.
 
-![](RackMultipart20200607-4-13xvoq8_html_a86fc23f9c25cd86.png)
+![](screenshots/4.png)
 
 **Convolutional Neural Networks (CNN):**
 
@@ -65,9 +65,9 @@ The final average accuracy of the model is **92,32%.**
 
 I trained the model in 50 epochs, compiled it with categorical\_crossentropy loss function and Adam optimizer:
 
-![](RackMultipart20200607-4-13xvoq8_html_4205873262a037a3.png)
+![](screenshots/5.png)
 
-![](RackMultipart20200607-4-13xvoq8_html_5c3f2e2393b37714.png)
+![](screenshots/6.png)
 
 **Cutout/Random erasing**
 
@@ -75,7 +75,7 @@ I also used Cutout/Random erasing implementation written by **yu4u** ([https://g
 
 This method contains several parameters that can be customized, e.g. the probability of changing images or the proportions of the changed image relative to the initial image:
 
-![](RackMultipart20200607-4-13xvoq8_html_5da99bcc5cef5a1f.png)
+![](screenshots/7.png)
 
 - p : the probability that random erasing is performed
 - s\_l, s\_h : minimum / maximum proportion of erased area against input image
@@ -85,35 +85,35 @@ This method contains several parameters that can be customized, e.g. the probabi
 
 Sample photo after using the eraser() function:
 
-![](RackMultipart20200607-4-13xvoq8_html_ea5892754a44c1af.png)
+![](screenshots/8.png)
 
 This is one of the images from the training dataset:
 
-![](RackMultipart20200607-4-13xvoq8_html_9964220b4561cd7e.png)
+![](screenshots/9.png)
 
 The data should be preprocessed before training the network. I scaled pixel color values to range from 0 to 1:
 
-![](RackMultipart20200607-4-13xvoq8_html_f4812dbee4ac179.png)
+![](screenshots/10.png)
 
 I also reshaped input images, as keras.layers.Conv2D requires that input image is 3 dimensional and those dimensions are (rows, columns, channels) for channels\_last data\_format. My images have only one color channel:
 
-![](RackMultipart20200607-4-13xvoq8_html_bfc96b980b900d19.png)
+![](screenshots/11.png)
 
 I used the Sequential model to create a simple CNN consisting of repeating structure: convolution layer, followed by a pooling layer then a dropout layer.
 
 I defined the input data shape in the first layer. The last layer is a dense layer with softmax activation which classifies the data as one of 10 labels.
 
-![](RackMultipart20200607-4-13xvoq8_html_d79471d0c3bbfd88.png)
+![](screenshots/12.png)
 
-![](RackMultipart20200607-4-13xvoq8_html_101b856694cff3bd.png)
+![](screenshots/13.png)
 
-![](RackMultipart20200607-4-13xvoq8_html_9215d849edba9302.png)
+![](screenshots/14.png)
 
 The final average accuracy of the model is **92.32%**. In the Benchmark this classifier achieved accuracy of **91,6%**. This small difference may have been caused by some differences in implementation, e.g. thanks to Cutout/Random erasing.
 
 Correct prediction labels are blue and incorrect prediction labels are red. The number gives the percentage (out of 100) for the predicted label:
 
-![](RackMultipart20200607-4-13xvoq8_html_b034a96f493e99dc.png)
+![](screenshots/15.png)
 
 **Sources:**
 
@@ -162,17 +162,17 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 Fashion-MNIST dataset is downloaded from Keras dataset.
 
-![](RackMultipart20200607-4-13xvoq8_html_a86fc23f9c25cd86.png)
+![](screenshots/16.png)
 
 I installed the library: Tensorflow. I used these libraries:
 
-![](RackMultipart20200607-4-13xvoq8_html_a92417f4ec1d9837.png)
+![](screenshots/17.png)
 
 I also installed pyyaml h5py to save/load model.
 
 I saved my model in HDF5 standard:
 
-![](RackMultipart20200607-4-13xvoq8_html_ae286b7168e4209f.png)
+![](screenshots/18.png)
 
 You can reload saved model:
 
