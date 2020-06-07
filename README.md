@@ -116,7 +116,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 ![](screenshots/15.png)
 
-### Sources:
+### `Sources:`
 
 [https://www.youtube.com/watch?v=RJudqel8DVA&amp;feature=youtu.be](https://www.youtube.com/watch?v=RJudqel8DVA&amp;feature=youtu.be)
 
@@ -132,7 +132,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 [https://www.tensorflow.org/tutorials/keras/save\_and\_load](https://www.tensorflow.org/tutorials/keras/save_and_load)
 
-### Tensorflow Tutorials which I used to write the model:
+### `Tensorflow Tutorials which I used to write the model:`
 
 [https://www.pyimagesearch.com/2019/02/11/fashion-mnist-with-keras-and-deep-learning/](https://www.pyimagesearch.com/2019/02/11/fashion-mnist-with-keras-and-deep-learning/)
 
@@ -146,7 +146,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 [https://github.com/cmasch/zalando-fashion-mnist/blob/master/Simple\_Convolutional\_Neural\_Network\_Fashion-MNIST.ipynb](https://github.com/cmasch/zalando-fashion-mnist/blob/master/Simple_Convolutional_Neural_Network_Fashion-MNIST.ipynb)
 
-### Cutout/Random erasing:
+### `Cutout/Random erasing:`
 
 [https://github.com/yu4u/cutout-random-erasing](https://github.com/yu4u/cutout-random-erasing)
 
