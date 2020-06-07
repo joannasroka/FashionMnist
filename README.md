@@ -159,7 +159,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 ## Usage
 
-### Import Fashion Mnist dataset with Tensorflow/Keras:**
+### Import Fashion Mnist dataset with Tensorflow/Keras:
 
 Fashion-MNIST dataset is downloaded from Keras dataset.
 
