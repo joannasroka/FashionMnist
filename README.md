@@ -1,7 +1,5 @@
 # FashionMnist
-**Joanna Sroka 246756**
-
-Introduction
+**Introduction**
 
 The goal of this exercise was to implement a model that would allow classification of clothes photographs. Image classification is one of the most fundamental problems in ML. Given a set of images that are all labeled with a single category (digits 0...9), model should predict these categories for a novel set of test images and measure the accuracy of the predictions. There are a variety of challenges associated with this task, e.g. different points of view, image deformation, etc.
 
@@ -11,7 +9,7 @@ In this project, I will discuss different classification models and compare them
 
 It will show that KNN achieves worse classification accuracy than CNN. The implemented approaches are evaluated by the accuracy of the predictions on test photos.
 
-Methods
+**Methods**
 
 **K Nearest Neighbours (KNN)**
 
@@ -152,14 +150,14 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 
 [https://github.com/yu4u/cutout-random-erasing](https://github.com/yu4u/cutout-random-erasing)
 
-Results
+**Results**
 
 | Classifier | My implementation | Benchmark |
 | --- | --- | --- |
 | KNeighborsClassifier | 0.858 | 0.860 |
 | 2 Conv+pooling | 0.923 | 0.916 |
 
-Usage
+**Usage**
 
 **Import Fashion Mnist dataset with Tensorflow/Keras:**
 
