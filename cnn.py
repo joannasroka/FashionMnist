@@ -93,7 +93,7 @@ for m in range(60000):
 #print(train_images.shape)
 #print(train_labels.shape)
  
-model.fit(train_images, train_labels, epochs=2)
+model.fit(train_images, train_labels, epochs=50)
  
 #model.save('my_model.h5')
  
