@@ -177,7 +177,7 @@ I saved my model in HDF5 standard:
 
 You can reload saved model:
 
-**new\_model = tf.keras.models.load\_model(&#39;my\_model.5&#39;)**
+```**new\_model = tf.keras.models.load\_model(&#39;my\_model.5&#39;)**```
 
 Or just run the program. Each method is in a separate, single file.
 
