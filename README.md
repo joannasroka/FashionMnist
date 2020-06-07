@@ -18,7 +18,7 @@ To calculate the distance between two objects is used some closeness metric.
 
 I used the optimized Euclidean distance method, also called L2 norm, without any loops:
 
-![](RackMultipart20200607-4-13xvoq8_html_1baf1719c5ecb068.png)
+![](screenshots/1.png)
 
 In order to compute the distance matrix efficiently I needed to vectorize the operation. By vectorizing I mean expressing the operations done on each pair of elements of matrices as an operation done on whole matrices.
 
