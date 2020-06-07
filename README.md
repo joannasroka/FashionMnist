@@ -8,6 +8,7 @@ There are many different techniques and models to solve the problem of image cla
 In this project, I will discuss different classification models and compare them. I will begin with simple classic machine learning algorithms: K-nearest neighbors. For a more advanced model, I will implement a Convolutional Neural Network.
 
 It will show that KNN achieves worse classification accuracy than CNN. The implemented approaches are evaluated by the accuracy of the predictions on test photos.
+
 ---
 
 ## Methods
@@ -150,6 +151,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 **Cutout/Random erasing:**
 
 [https://github.com/yu4u/cutout-random-erasing](https://github.com/yu4u/cutout-random-erasing)
+
 ---
 
 ## Results
@@ -158,6 +160,7 @@ Correct prediction labels are blue and incorrect prediction labels are red. The 
 | --- | --- | --- |
 | KNeighborsClassifier | 0.858 | 0.860 |
 | 2 Conv+pooling | 0.923 | 0.916 |
+
 ---
 
 ## Usage
